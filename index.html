@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Functions</title>
-  </head>
-  <body>
-    <main style="display: flex; justify-content: center; align-items: center; text-align: center;">
-      <div>
-        <h1>JavaScript Functions</h1>
-        <p>
-          Open the Browser Console to view your work (Right-Click => Inspect or
-          fn+F12)
-        </p>
-      </div>
-    </main>
 
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Functions</title>
+    <!--Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- MAIN LAYOUT SECTION
+    This section centers all content on the screen, horizontally and vertically.
+    Makes it feel clean to the eeye, centered, and readable.
+  -->
+  <main style="display: flex; justify-content: center; align-items: center; text-align: center;">
+    <div>
+      <h1>JavaScript Functions</h1>
+      <p>
+        Open the Browser Console to view your work (Right-Click => Inspect or
+        fn+F12)
+      </p>
+
+      <form id="ageForm" style="margin-top: 20px;">
+        <!-- Here is where Logger will show messages to the user -->
+        <div id="log" style="margin-top: 20px; font-weight: bold; color: #2a2a2a;"></div>
+        <label>
+          Name:
+          <input type="text" id="userName" placeholder="Enter your name" required />
+        </label>
+        <br /><br />
+        <label>
+          Age:
+          <input type="number" id="age" placeholder="Enter your age" required />
+        </label>
+        <br /><br />
+        <button type="submit">Check if you can drive</button>
+      </form>
+    </div>
+  </main>
+
+
+  <script type="module" src="app.js"></script>
+</body>
 </html>
