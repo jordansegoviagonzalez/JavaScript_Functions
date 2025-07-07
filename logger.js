@@ -28,7 +28,8 @@ export class Logger {
     const logBox = document.getElementById("log");
     if (logBox) {
       // Real time UI feedback
-      logBox.textContent = message;
+      logBox.textContent += `\n${message}`;
+
     }
   }
 }

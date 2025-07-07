@@ -113,10 +113,10 @@ function triangleShape(a, b, c) {
     return "Invalid triangle";
   }
   if (a === b && b === c) {
-    return "Equilateral triangle: All sides lenghts equal";
+    return "Equilateral triangle: All sides lengths equal";
   }
   if (a === b || b === c || a === c) {
-    return "Isosceles triangle: Only two side lenghts equal";
+    return "Isosceles triangle: Only two side lengths equal";
   }
   return "Scalene triangle : All different side lengths";
 }
